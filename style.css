@@ -1,0 +1,172 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./assets/rm127-tang-17-japaneseframe.jpg);
+  background-position: 0 0;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* Navbar and Hoverline */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-style: none;
+}
+.nav-link {
+  font-family: "Cabin Sketch";
+  font-size: 24px;
+  color: black;
+}
+.hoverline {
+  display: inline-block;
+}
+
+.hoverline:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #f7f8f8;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.hoverline:hover:after {
+  transform: scaleX(1);
+}
+/* Navbar and hoverline end */
+
+/* Header Styles */
+header {
+  padding: 32px 0;
+  text-align: center;
+}
+
+header h1 {
+  color: black;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+header > p {
+  font-size: 22px;
+}
+
+/* Main Content Styles */
+.mycontainer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Image Styles */
+.profile-img {
+  display: block;
+  max-width: 300px;
+  height: 230px;
+  border-radius: 5px;
+}
+
+/* Text Styles */
+.intro-para {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.child {
+  padding-left: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-style: none;
+}
+.card-header {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.card-body {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+.gravitation {
+  display: block;
+  width: 350px;
+  height: 200px;
+}
+
+.iframe {
+  width: 560px;
+  height: 315px;
+}
+.video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Footer Styles */
+footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  color: black;
+  padding: 5px 0;
+  text-align: center;
+}
+.footer-para {
+  margin-bottom: 0;
+}
+
+.social {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background-size: cover;
+    background-position: 17% -20%;
+    background-repeat: no-repeat;
+  }
+  header {
+    padding-top: 3rem;
+    padding-bottom: 0;
+  }
+  header > p {
+    font-size: 16px;
+  }
+  .mycontainer {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .card {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  .profile-img {
+    margin: 0 auto;
+  }
+  .card-body {
+    flex-direction: column;
+  }
+  .gravitation {
+    width: 100%;
+  }
+  .card-body {
+    padding: 0;
+  }
+  .card-header {
+    padding: 0;
+  }
+  .iframe {
+    width: 97vw;
+  }
+}
